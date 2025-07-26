@@ -17,7 +17,7 @@ $       - Matches the end of a string
 --------------
 {n}     - Exactly n repetitions
 {n,}    - n or more repetitions
-{n,m}   - Between n and m repetitions
+{n,m}   - Between n and m repetitions (includes m)
 
 3. Escape Character
 -------------------
@@ -27,10 +27,13 @@ $       - Matches the end of a string
 ---------------------------
 \d     - Digit (0–9)
 \D     - Non-digit
-\w     - Word character (alphanumeric + underscore)
+\w     - Word character (a-z, A-Z, 0-9, _ )
 \W     - Non-word character
-\s     - Whitespace
-\S     - Non-whitespace
+\s     - Whitespace (space, tab, newline)
+\S     - Non-whitespace (NOT (space, tab, newline))
 \b     - Word boundary
 \B     - Not a word boundary
 \\     - Literal backslash
+
+\n     - refers/variable to the n capturing group—the part of the pattern wrapped in the first pair of parentheses ()
+            - e.g. \1
