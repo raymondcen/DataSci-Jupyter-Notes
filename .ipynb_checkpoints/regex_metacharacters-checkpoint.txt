@@ -1,0 +1,36 @@
+Regular Expression Metacharacters
+
+1. Basic Metacharacters
+------------------------
+.       - Matches any single character except newline
+^       - Matches the start of a string
+$       - Matches the end of a string
+*       - Matches 0 or more repetitions of the preceding element
++       - Matches 1 or more repetitions of the preceding element
+?       - Matches 0 or 1 of the preceding element; also used to make quantifiers non-greedy
+[]      - Matches any one character in the brackets (character class)
+[^]     - Matches any one character NOT in the brackets
+|       - Acts as an OR between expressions
+()      - Groups expressions; also captures matched content
+
+2. Quantifiers
+--------------
+{n}     - Exactly n repetitions
+{n,}    - n or more repetitions
+{n,m}   - Between n and m repetitions
+
+3. Escape Character
+-------------------
+\      - Escapes a metacharacter or introduces special sequences (like \d, \w)
+
+4. Common Escaped Sequences
+---------------------------
+\d     - Digit (0–9)
+\D     - Non-digit
+\w     - Word character (alphanumeric + underscore)
+\W     - Non-word character
+\s     - Whitespace
+\S     - Non-whitespace
+\b     - Word boundary
+\B     - Not a word boundary
+\\     - Literal backslash
